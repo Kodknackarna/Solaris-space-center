@@ -3,14 +3,14 @@ Gruppexamination grupp 1
 
 
 När och hur ska vi arbeta? Hur skall vi kommunicera med varandra?<br>
-  Fre: 9-12
-  Mån: 9-15
-  Tis: 9-16 (Handledningstid)
-  Ons: 9-12 
-  Tors: 9-14 (Handledningstid), 14-16
-  Fre: 9 tills vi tar helg
-  Side-by-side coding över zoom på handledningstillfällena, övriga tider på Discord.
-  Om kodning görs på egen hand av någon anledning så får personen skapa en ny branch på git.
+  Fre: 9-12<br>
+  Mån: 9-15<br>
+  Tis: 9-16 (Handledningstid)<br>
+  Ons: 9-12 <br>
+  Tors: 9-14 (Handledningstid), 14-16<br>
+  Fre: 9 tills vi tar helg<br>
+  Side-by-side coding över zoom på handledningstillfällena, övriga tider på Discord.<br>
+  Om kodning görs på egen hand av någon anledning så får personen skapa en ny branch på git.<br>
 
 Vilka krav ställer vi på varandra? Hur aktiv behöver man vara?
   Att alla deltar i side-by-side kodandet. Om någon behöver gå tidigare eller missar så får personen koda lite på egen hand.
