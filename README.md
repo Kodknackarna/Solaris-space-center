@@ -2,7 +2,7 @@
 Gruppexamination grupp 1
 
 
-När och hur ska vi arbeta? Hur skall vi kommunicera med varandra?/n
+När och hur ska vi arbeta? Hur skall vi kommunicera med varandra?<br>
   Fre: 9-12
   Mån: 9-15
   Tis: 9-16 (Handledningstid)
