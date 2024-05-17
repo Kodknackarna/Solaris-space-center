@@ -15,7 +15,7 @@ orbitalPeriod: number,
 desc: string,
 moons: [],
 size?: number,
-color?: number
+color?: string
 }
 
 export default PlanetType;
