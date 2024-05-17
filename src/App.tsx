@@ -18,8 +18,6 @@ function App() {
   .catch(error => console.log(error));
   }, []);
 
-  console.log(planets);
-
   return (
     <>
       <PlanetList planets={ planets } />
