@@ -6,9 +6,6 @@ type planetProps = {
 }
 
 function PlanetList ({ planets } : planetProps) {
-    if (!Array.isArray(planets)) {
-        return <div>Planets prop is not an array!</div>;
-    }
     return (
         <>
         {

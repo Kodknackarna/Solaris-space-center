@@ -2,8 +2,11 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import PlanetType from "./models/planetType";
 import PlanetList from "./components/PlanetList";
-import Planet from "./components/Planet";
 
+/*
+TODOS:
+Implmentera Homepage -> skicka in planetlist dit, rendera ut Homepage i app istället och sylea
+*/
 
 function App() {
 
@@ -20,8 +23,8 @@ function App() {
 
   return (
     <>
-      <PlanetList planets={ planets } />
       <h1>Solaris Space Center</h1>
+      <PlanetList planets={ planets } />
     </>
   )
 }
