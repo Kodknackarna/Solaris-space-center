@@ -12,7 +12,7 @@ function HomePage({ planets } : planetProps) {
         <section className="homePageWrapper">
             <h1>Solaris Space Center</h1>
             <div className="planetWrapper">
-            <PlanetList  planets = { planets }/>
+                <PlanetList  planets = { planets }/>
             </div>
         </section>
     )
