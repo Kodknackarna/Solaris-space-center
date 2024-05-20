@@ -9,7 +9,8 @@ function PlanetDetails ({ planet } : planetProps) {
     return (
         <section className="planetDetailsBackround" style={{ backgroundColor: planet.color}}>
             <div className="planetDetailsWrapper">
-            <h1>{planet.name}</h1>
+            <h1 style={{ backgroundColor: planet.color}}>{planet.name}</h1>
+            <div className="upperWrapper">
             <div className="planetDetails">
                 <h2>Detaljer</h2>
                 <p><strong>Typ: </strong>{planet.type}</p>
@@ -25,6 +26,7 @@ function PlanetDetails ({ planet } : planetProps) {
                 <h2>Månar</h2>
                 {planet.moons === null || planet.moons.length === 0 && <p>Inga månar</p>}
                 {planet.moons !== null && <p>{planet.moons}</p>}
+            </div>
             </div>
 
             <div className="planetInfo">
