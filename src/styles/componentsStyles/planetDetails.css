@@ -1,75 +1,75 @@
 
 .planetDetailsBackround {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    position: relative;
-  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  position: relative;
+}
 
-  .planetDetailsWrapper {
-    width: 65vw;
-    height: 75vh;
-    border: 0.7rem solid rgb(255, 255, 255);
-    position: absolute;
-    bottom: 6vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+.planetDetailsWrapper {
+  width: 65vw;
+  height: 75vh;
+  border: 0.7rem solid rgb(255, 255, 255);
+  position: absolute;
+  bottom: 6vh;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
 
-  .upperWrapper {
-    display: flex;
-    width: 100%;
-    height: 50%;
-  }
+.upperWrapper {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
 
-  .planetDetails {
-    width: 50%;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
+.planetDetails {
+  width: 50%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
   
-  .planetMoon {
-    width: 50%;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
+.planetMoon {
+  width: 50%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
 
-  .planetDetails h2 {
-    font-size: 2rem;
-  }
+.planetDetails h2 {
+  font-size: 2rem;
+}
 
-  .planetMoon h2 {
-    font-size: 2rem;
-  }
+.planetMoon h2 {
+  font-size: 2rem;
+ }
 
-  .planetInfo {
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-top: 0.3rem solid rgb(255, 255, 255);
-  }
+.planetInfo {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-top: 0.3rem solid rgb(255, 255, 255);
+  font-size: large;
+}
 
-  .planetInfo p {
-    margin: 0;
-  }
+.planetInfo p {
+  margin: 0;
+}
 
-  h1 {
-    position: absolute;
-    top: -3rem; /* Flytta h1 uppåt över bordern */
-    left: 1rem; /* Justera vänster marginal */
-    margin: 0;
-    padding: 0 0.5rem; /* Justera padding för att passa */
-    /*background-color: /* din planetfärg här */
-    z-index: 10; /* Se till att h1 är ovanför border */
-    font-size: 4rem; /* Justera fontstorlek efter behov */
-    overflow: visible;
-  }
+h1 {
+  position: absolute;
+  top: -3rem;
+  left: 1rem; 
+  margin: 0;
+  padding: 0 0.5rem;
+  z-index: 10;
+  font-size: 4rem;
+  overflow: visible;
+}
