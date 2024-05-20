@@ -1,4 +1,5 @@
 import PlanetType from "../models/planetType";
+import "../styles/componentsStyles/planet.css";
 
 type planetProps = {
     planet : PlanetType
@@ -6,9 +7,9 @@ type planetProps = {
 
 function Planet ({ planet } : planetProps ) {
     return (
-        <>
-        <p style={{ backgroundColor: planet.color }}>{planet.name}</p>
-        </>
+        <section >
+            <p className="planet" style={{ backgroundColor: planet.color, width: planet.size * 10 + 'px', height: planet.size * 10 + 'px' }}></p>
+        </section>
     )
 }
 

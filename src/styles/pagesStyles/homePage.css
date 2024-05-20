@@ -1,0 +1,13 @@
+.planetWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.homePageWrapper {
+    height: 100vh;
+    width: 100vw; 
+    background: linear-gradient(to left, rgb(1, 1, 32), rgb(2, 19, 94));
+}
