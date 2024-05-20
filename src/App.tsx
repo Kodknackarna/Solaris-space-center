@@ -2,8 +2,8 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import PlanetType from "./models/planetType";
 import HomePage from "./pages/HomePage";
-import PlanetDetails from "./components/PlanetDetails";
-import Planet from "./components/Planet";
+//import PlanetDetails from "./components/PlanetDetails";
+//import Planet from "./components/Planet";
 import PlanetPage from "./pages/PlanetPage";
 import { Route, Routes } from "react-router-dom";
 

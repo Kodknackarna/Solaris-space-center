@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PlanetList from "../components/PlanetList";
 import PlanetType from "../models/planetType";
 import '../styles/pagesStyles/homePage.css'
@@ -7,15 +8,21 @@ type planetProps = {
     planets : PlanetType[]
 }
 
-function HomePage({ planets } : planetProps) {
+function HomePage({ planets }: planetProps) {
+    const [headerText, setHeaderText] = useState("Solaris Space Center");
+
+    const updateHeaderText = (text: string) => {
+        setHeaderText(text);
+    };
+
     return (
         <section className="homePageWrapper">
-            <h1>Solaris Space Center</h1>
+            <h1>{headerText}</h1>
             <div className="planetWrapper">
-                <PlanetList  planets = { planets }/>
+                <PlanetList planets={planets} updateHeaderText={updateHeaderText} />
             </div>
         </section>
     )
 }
 
-export default HomePage;
+export default HomePage
