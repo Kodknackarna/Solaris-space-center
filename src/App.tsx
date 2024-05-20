@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import PlanetType from "./models/planetType";
-import PlanetList from "./components/PlanetList";
+import HomePage from "./pages/HomePage";
 
 /*
 TODOS:
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <h1>Solaris Space Center</h1>
-      <PlanetList planets={ planets } />
+      <HomePage planets={ planets } />
     </>
   )
 }
