@@ -1,2 +1,16 @@
+.planetDetailsBackround {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .planetDetailsWrapper {
+    display: flex;
+    justify-content: space-around;
+    border: 0.5rem solid rgb(255, 255, 255);
+    margin: auto;
+    width: 65vw;
+    height: 65vh;
  }

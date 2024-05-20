@@ -15,16 +15,12 @@ function PlanetPage({ planets } : PlanetProps) {
     useEffect(()=>{
         if(typeof id !== 'undefined') {
             const chosenPlanet = planets.find(p => p.id === parseInt(id));
-
-            console.log("Chosen Planet:", chosenPlanet); // Loggar chosenPlanet
-
             setPlanet(chosenPlanet);
         }
         else {
-            console.log("ID är undefined"); // Loggar om id är undefined
+            console.log("ID är undefined");
         }
     }, [id, planets]);
-
 
     return (
         <section className="planetPageWrapper">

@@ -7,10 +7,10 @@ type planetProps = {
 
 function PlanetDetails ({ planet } : planetProps) {
     return (
-        <section className="planetDetailsWrapper" style={{ backgroundColor: planet.color}}>
+        <section className="planetDetailsBackround" style={{ backgroundColor: planet.color}}>
+            <div className="planetDetailsWrapper">
             <h1>{planet.name}</h1>
             <div className="planetDetails">
-                <p>färg : {planet.color}</p>
                 <h2>Detaljer</h2>
                 <p><strong>Typ: </strong>{planet.type}</p>
                 <p><strong>Omkrets: </strong>{planet.circumference}</p>
@@ -18,7 +18,7 @@ function PlanetDetails ({ planet } : planetProps) {
                 <p><strong>Distans från solen: </strong>{planet.distance}</p>
                 <p><strong>Omloppstid: </strong>{planet.orbitalPeriod}</p>
                 <p><strong>Dagstemperatur: </strong>{planet.temp.day}</p>
-                <p><strong>Nattemperatur</strong>{planet.temp.night}</p>
+                <p><strong>Nattemperatur: </strong>{planet.temp.night}</p>
             </div>
 
             <div className="planetMoon">
@@ -29,6 +29,7 @@ function PlanetDetails ({ planet } : planetProps) {
 
             <div className="planetInfo">
                 <p>{planet.desc}</p>
+            </div>
             </div>
         </section>
     )

@@ -16,13 +16,42 @@ function App() {
 
   const [planets, setPlanets] = useState<PlanetType[]>([]);
 
-  useEffect(()=> {
-    axios.get('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', {
-      headers : { 'x-zocom' : 'solaris-7BTxHCyHhzIME5TI' }
-  }).then(response => {
-    setPlanets(response.data.bodies);
-  })
-  .catch(error => console.log(error));
+  useEffect(() => {
+    axios
+      .get('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', {
+        headers: { 'x-zocom': 'solaris-7BTxHCyHhzIME5TI' }
+      })
+      .then(response => {
+        const fetchedPlanets = response.data.bodies;
+
+        const updatedPlanets = fetchedPlanets.map((planet: PlanetType) => {
+          switch (planet.name) {
+            case "Solen":
+              return { ...planet, color: "#FDCE29", size: 20 };
+            case "Merkurius":
+              return { ...planet, color: "#8C8B85", size: 1 };
+            case "Venus":
+              return { ...planet, color: "#E7CCCB", size: 2 };
+            case "Jorden":
+              return { ...planet, color: "#418ED5", size: 4 };
+            case "Mars":
+              return { ...planet, color: "#EE5F5F", size: 3 };
+            case "Jupiter":
+              return { ...planet, color: "#E29468", size: 10 };
+            case "Saturnus":
+              return { ...planet, color: "#C6A971", size: 8 };
+            case "Uranus":
+              return { ...planet, color: "#C9D4F1", size: 6 };
+            case "Neptunus":
+              return { ...planet, color: "#7A91A7", size: 5 };
+            default:
+              return { ...planet, color: "", size: 0 };
+          }
+        });
+
+        setPlanets(updatedPlanets);
+      })
+      .catch(error => console.log(error));
   }, []);
 
   return (
