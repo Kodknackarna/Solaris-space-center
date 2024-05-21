@@ -75,3 +75,7 @@ legend {
   overflow: visible;
   font-family: 'Orbitron', sans-serif;
 }
+
+.planet-details-btn {
+  z-index: 11;
+}

@@ -3,9 +3,16 @@ import '../styles/componentsStyles/planetDetails.css';
 
 type planetProps = {
     planet: PlanetType
+    togglePlanetInFavoriteList : (id : number ) => void 
+    favoritePlanetList : PlanetType[]
 }
 
-function PlanetDetails({ planet }: planetProps) {
+function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList }: planetProps) {
+
+    const isInFavoriteList = (id : number) => {
+        return favoritePlanetList.some(planet => planet.id === id)
+    }
+
     return (
         <section className="planetDetailsBackround">
             <fieldset className="planetDetailsWrapper">
@@ -31,6 +38,9 @@ function PlanetDetails({ planet }: planetProps) {
                 <div className="planetInfo">
                     <p>{planet.desc}</p>
                 </div>
+                <button onClick={() => togglePlanetInFavoriteList(planet.id)} className="planet-details-btn">
+                {isInFavoriteList (planet.id) ? "Ta bort favorit" : "Lägg till favorit"}
+             </button>
             </fieldset>
         </section>
     );

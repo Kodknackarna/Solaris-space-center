@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 //import Planet from "./components/Planet";
 import PlanetPage from "./pages/PlanetPage";
 import { Route, Routes } from "react-router-dom";
+import Planet from "./components/Planet";
+import PlanetList from "./components/PlanetList";
 
 /*
 TODOS:
@@ -15,6 +17,7 @@ Implmentera Homepage -> skicka in planetlist dit, rendera ut Homepage i app ist�
 function App() {
 
   const [planets, setPlanets] = useState<PlanetType[]>([]);
+  const [favoritePlanetList, setFavoritePlanetList] = useState<PlanetType[]>([]);
 
   useEffect(() => {
     axios
@@ -54,11 +57,29 @@ function App() {
       .catch(error => console.log(error));
   }, []);
 
+  const togglePlanetInFavoriteList = (id : number) => {
+    if(favoritePlanetList.some(planet => planet.id === id)) {
+      console.log("Ta bort från planetlist");
+    
+      const filteredPlanetlist = favoritePlanetList.filter(planet => planet.id !== id);
+      setFavoritePlanetList(filteredPlanetlist);
+    } else {
+      console.log("Lägg till i planetlist");
+      setFavoritePlanetList(favoritePlanetList => {
+        const foundPlanet = planets.find(planet => planet.id === id);
+        return foundPlanet ? [...favoritePlanetList, foundPlanet] : favoritePlanetList;
+      });
+    }
+  };
+
+
   return (
     <>
     <Routes>
       <Route path="/" element={<HomePage planets={ planets } /> } />
-      <Route path="/planet/:id" element={<PlanetPage planets = { planets }/>} />
+      <Route path="/planet/:id" element={<PlanetPage planets = { planets }
+      togglePlanetInFavoriteList={togglePlanetInFavoriteList}
+      favoritePlanetList={favoritePlanetList}/>} />
     </Routes>
     </>
   )
