@@ -22,7 +22,9 @@ function HomePage({ planets }: planetProps) {
             <div className="planetWrapper">
                 <PlanetList planets={planets} updateHeaderText={updateHeaderText} />
             </div>
+            <div className="Home-navigation">
             <PlanetNav />
+            </div>
         </section>
     )
 }

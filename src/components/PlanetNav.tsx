@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import '../styles/componentsStyles/planetNav.css'
 
 function PlanetNav () {
     return (
         <nav>
-            <ul>
+            <ul className="navigationList">
                 <li>
                     <Link to="/">Hem</Link>
                 </li>
@@ -15,4 +16,4 @@ function PlanetNav () {
     );
 }
 
-export default PlanetNav
+export default PlanetNav;
