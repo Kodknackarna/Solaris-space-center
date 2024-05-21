@@ -8,6 +8,7 @@ import PlanetPage from "./pages/PlanetPage";
 import { Route, Routes } from "react-router-dom";
 import Planet from "./components/Planet";
 import PlanetList from "./components/PlanetList";
+import FavoritePage from "./pages/FavoritePage";
 
 /*
 TODOS:
@@ -80,6 +81,7 @@ function App() {
       <Route path="/planet/:id" element={<PlanetPage planets = { planets }
       togglePlanetInFavoriteList={togglePlanetInFavoriteList}
       favoritePlanetList={favoritePlanetList}/>} />
+      <Route path="/favorites" element={<FavoritePage favoritePlanetList={favoritePlanetList}/>} />
     </Routes>
     </>
   )

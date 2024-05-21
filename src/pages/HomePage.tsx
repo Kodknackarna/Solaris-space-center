@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PlanetList from "../components/PlanetList";
 import PlanetType from "../models/planetType";
 import '../styles/pagesStyles/homePage.css'
+import PlanetNav from '../components/PlanetNav';
 
 
 type planetProps = {
@@ -21,6 +22,7 @@ function HomePage({ planets }: planetProps) {
             <div className="planetWrapper">
                 <PlanetList planets={planets} updateHeaderText={updateHeaderText} />
             </div>
+            <PlanetNav />
         </section>
     )
 }

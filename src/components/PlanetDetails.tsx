@@ -1,5 +1,7 @@
 import PlanetType from "../models/planetType";
 import '../styles/componentsStyles/planetDetails.css';
+import PlanetNav from "./PlanetNav";
+
 
 type planetProps = {
     planet: PlanetType
@@ -42,6 +44,9 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
                 {isInFavoriteList (planet.id) ? "Ta bort favorit" : "Lägg till favorit"}
              </button>
             </fieldset>
+            <div className="navigation">
+            <PlanetNav />
+            </div>
         </section>
     );
 }

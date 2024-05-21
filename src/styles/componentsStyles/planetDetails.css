@@ -79,3 +79,11 @@ legend {
 .planet-details-btn {
   z-index: 11;
 }
+
+.favorite-link {
+  z-index: 11;
+}
+
+.navigation {
+  z-index: 11;
+}

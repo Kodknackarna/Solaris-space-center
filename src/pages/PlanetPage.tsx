@@ -3,6 +3,7 @@ import PlanetType from "../models/planetType";
 import { useParams } from "react-router-dom";
 import PlanetDetails from "../components/PlanetDetails";
 import '../styles/pagesStyles/planetPage.css';
+import PlanetNav from "../components/PlanetNav";
 
 type PlanetProps = {
     planets: PlanetType[]
@@ -61,7 +62,7 @@ function PlanetPage({ planets, togglePlanetInFavoriteList, favoritePlanetList }:
             togglePlanetInFavoriteList={togglePlanetInFavoriteList} 
             favoritePlanetList={favoritePlanetList}/> 
             : <div>Loading...</div>}
-
+            
         </section>
     )
 }
