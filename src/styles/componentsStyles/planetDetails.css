@@ -22,6 +22,7 @@
 }
 
 .upperWrapper {
+  position: relative;
   display: flex;
   width: 100%;
   height: 50%;
@@ -77,5 +78,33 @@ legend {
 }
 
 .planet-details-btn {
-  z-index: 11;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  display: flex;
 }
+
+.planet-details-btn span {
+  margin-right: 2rem;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.planet-details-btn .fa-star {
+  margin-left: -0.95rem;
+}
+
+.planet-details-btn .fa-star.background {
+  color: black;
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.planet-details-btn .fa-star.foreground {
+  color: #ffd700;
+  z-index: 2;
+}
+
