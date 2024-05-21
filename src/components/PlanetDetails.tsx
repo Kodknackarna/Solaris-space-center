@@ -14,7 +14,7 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
     }
 
     return (
-        <section className="planetDetailsBackround">
+        <section className="planetDetailsBackground">
             <fieldset className="planetDetailsWrapper">
                 <legend>{planet.name}</legend>
                 <div className="upperWrapper">
