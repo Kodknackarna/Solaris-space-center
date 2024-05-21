@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import PlanetType from "../models/planetType";
 import { useParams } from "react-router-dom";
 import PlanetDetails from "../components/PlanetDetails";
-import '../styles/pagesStyles/planetPage.css';
-import PlanetNav from "../components/PlanetNav";
+import '../styles/pagesStyles/planetPage.css'
 
 type PlanetProps = {
     planets: PlanetType[]
