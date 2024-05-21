@@ -19,6 +19,7 @@ function FavoritePage({ favoritePlanetList } : PlanetProps) {
         <div className="favorite-navigation">
             <PlanetNav />
             </div>
+            
     </section>
     )
 }
