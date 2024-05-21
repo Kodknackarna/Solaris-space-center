@@ -8,8 +8,8 @@ type planetProps = {
 function PlanetDetails({ planet }: planetProps) {
     return (
         <section className="planetDetailsBackround">
-            <div className="planetDetailsWrapper">
-                <h1>{planet.name}</h1>
+            <fieldset className="planetDetailsWrapper">
+                <legend>{planet.name}</legend>
                 <div className="upperWrapper">
                     <div className="planetDetails">
                         <h2>Detaljer</h2>
@@ -31,7 +31,7 @@ function PlanetDetails({ planet }: planetProps) {
                 <div className="planetInfo">
                     <p>{planet.desc}</p>
                 </div>
-            </div>
+            </fieldset>
         </section>
     );
 }
