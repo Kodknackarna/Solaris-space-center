@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     display: block;
+    z-index: 10;
 }
 
 .favorite-background {
@@ -19,6 +20,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    position: relative; /* Lägg till relativ positionering */
 }
 
 

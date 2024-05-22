@@ -5,19 +5,23 @@ import "../styles/componentsStyles/planet.css";
 type planetProps = {
     planet : PlanetType,
     updateHeaderText: (text: string) => void
+    onMouseEnter: () => void;
+    onMouseLeave: () => void;
 }
 
-function Planet ({ planet, updateHeaderText } : planetProps ) {
+function Planet ({ planet, updateHeaderText, onMouseEnter, onMouseLeave } : planetProps ) {
     const [headerText, setHeaderText] = useState("Solaris Space Center");
 
     const handleMouseEnter = () => {
         setHeaderText(`${planet.name}`);
         updateHeaderText(`${planet.name}`);
+        onMouseEnter();
     };
 
     const handleMouseLeave = () => {
         setHeaderText("Solaris Space Center");
         updateHeaderText("Solaris Space Center");
+        onMouseLeave();
     };
 
     return (
