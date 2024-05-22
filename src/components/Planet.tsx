@@ -23,10 +23,15 @@ function Planet ({ planet, updateHeaderText } : planetProps ) {
     return (
         <section > 
             
-            <p className="planet" style={{ backgroundColor: planet.color, width: planet.size * 10 + 'px', height: planet.size * 10 + 'px' }}
+            <p className="planet" 
+                style={{ 
+                    backgroundColor: planet.color ?? '#FFFFFF', 
+                    width: (planet.size ?? 0) * 10 + 'px', 
+                    height: (planet.size ?? 0) * 10 + 'px' 
+                }}
                 onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-            ></p>
+                onMouseLeave={handleMouseLeave}>
+            </p>
         </section>
     )
 }

@@ -2,18 +2,10 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import PlanetType from "./models/planetType";
 import HomePage from "./pages/HomePage";
-//import PlanetDetails from "./components/PlanetDetails";
-//import Planet from "./components/Planet";
 import PlanetPage from "./pages/PlanetPage";
 import { Route, Routes } from "react-router-dom";
-import Planet from "./components/Planet";
-import PlanetList from "./components/PlanetList";
 import FavoritePage from "./pages/FavoritePage";
 
-/*
-TODOS:
-Implmentera Homepage -> skicka in planetlist dit, rendera ut Homepage i app istället och sylea
-*/
 
 function App() {
 
@@ -79,8 +71,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage planets={ planets } /> } />
       <Route path="/planet/:id" element={<PlanetPage planets = { planets }
-      togglePlanetInFavoriteList={togglePlanetInFavoriteList}
-      favoritePlanetList={favoritePlanetList}/>} />
+                                togglePlanetInFavoriteList={togglePlanetInFavoriteList}
+                                favoritePlanetList={favoritePlanetList}/>} />           
       <Route path="/favorites" element={<FavoritePage favoritePlanetList={favoritePlanetList}/>} />
     </Routes>
     </>

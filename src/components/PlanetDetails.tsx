@@ -46,9 +46,9 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
                     <p>{planet.desc}</p>
                 </div>
             </fieldset>
-            <div className="navigation">
-            <PlanetNav />
-            </div>
+                <div className="navigation">
+                    <PlanetNav />
+                </div>
         </section>
     );
 }

@@ -23,7 +23,7 @@ function HomePage({ planets }: planetProps) {
                 <PlanetList planets={planets} updateHeaderText={updateHeaderText} />
             </div>
             <div className="Home-navigation">
-            <PlanetNav />
+                <PlanetNav />
             </div>
         </section>
     )
