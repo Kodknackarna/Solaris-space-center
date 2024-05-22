@@ -7,6 +7,8 @@ import { Route, Routes } from "react-router-dom";
 import FavoritePage from "./pages/FavoritePage";
 
 
+//TODO: Fixa textuinfo om planeten i PlanetDetails css fil så all text får plats
+
 function App() {
 
   const [planets, setPlanets] = useState<PlanetType[]>([]);

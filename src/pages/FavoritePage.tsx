@@ -3,6 +3,7 @@ import PlanetNav from "../components/PlanetNav";
 import PlanetType from "../models/planetType";
 import '../styles/pagesStyles/favoritePage.css'
 import BackgroundImage from '../assets/stars-background.jpg';
+import FavoritePlanet from "../components/FavoritePlanet";
 
 type PlanetProps = {
     favoritePlanetList : PlanetType[]
@@ -13,16 +14,19 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
 
     return (
         <section className="favorite-background" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-            <section className="favoritePlanetList">
+            <div className="favoritePlanetList">
             {sortedFavoritePlanetList.length > 0 ? (
                 sortedFavoritePlanetList.map(planet => (
-                    <Planet key={planet.id} planet={planet} updateHeaderText={() => {}} />
+                    <div key={planet.id}>
+                            <Planet planet={planet} updateHeaderText={() => {}} />
+                            <FavoritePlanet planet={planet} />
+                    </div>
                 ))
             ) : (
-                <p>Inga favoritplaneter.</p>
+                <p className="nofavo">Inga favoritplaneter</p>
             )}
             
-            </section>
+            </div>
                 <div className="favorite-navigation">
                     <PlanetNav />
                 </div>

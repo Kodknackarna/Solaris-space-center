@@ -1,0 +1,19 @@
+.favoriteplanet-wrapper {
+    border: 0.1rem solid white;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1.3rem;
+
+}
+
+.favoriteplanet-wrapper h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.favoriteplanet-wrapper p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
