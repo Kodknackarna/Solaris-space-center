@@ -52,12 +52,9 @@ function App() {
 
   const togglePlanetInFavoriteList = (id : number) => {
     if(favoritePlanetList.some(planet => planet.id === id)) {
-      console.log("Ta bort från planetlist");
-    
       const filteredPlanetlist = favoritePlanetList.filter(planet => planet.id !== id);
       setFavoritePlanetList(filteredPlanetlist);
     } else {
-      console.log("Lägg till i planetlist");
       setFavoritePlanetList(favoritePlanetList => {
         const foundPlanet = planets.find(planet => planet.id === id);
         return foundPlanet ? [...favoritePlanetList, foundPlanet] : favoritePlanetList;

@@ -36,7 +36,7 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
                         <p>{planet.moons && planet.moons.length > 0 ? planet.moons.join(', ') : 'Inga månar'}</p>
                     </div>
                     <button onClick={() => togglePlanetInFavoriteList(planet.id)} className="planet-details-btn">
-                        <span>{isInFavoriteList(planet.id) ? "Favorit" : "Lägg till favorit"}</span>
+                        <span>{isInFavoriteList(planet.id) ? "Ta bort favorit" : "Lägg till favorit"}</span>
                         <i className={`fa-star background ${isInFavoriteList(planet.id) ? "fas" : "far"}`}></i>
                         <i className={`fa-star foreground ${isInFavoriteList(planet.id) ? "fas" : "far"}`}></i>
                     </button>
