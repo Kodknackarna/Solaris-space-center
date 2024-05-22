@@ -30,7 +30,7 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
             <div className="favoritePlanetList">
             {sortedFavoritePlanetList.length > 0 ? (
                 sortedFavoritePlanetList.map(planet => (
-                    <div key={planet.id} style={{ position: 'relative' }}>
+                    <div key={planet.id} >
                             <Planet
                             planet={planet}
                             updateHeaderText={() => {}}

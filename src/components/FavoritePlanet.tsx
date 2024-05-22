@@ -7,7 +7,7 @@ type PlanetProps = {
 
 function FavoritePlanet ({ planet } : PlanetProps) {
     return (
-        <section className="favoriteplanet-wrapper">
+        <section className="favoriteplanet-wrapper" style={{ marginTop: "1rem" }}>
             <h1>{planet.name}</h1>
             <p><strong>Typ: </strong>{planet.type}</p>
             <p><strong>Omkrets: </strong>{planet.circumference}</p>

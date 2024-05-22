@@ -4,15 +4,7 @@
     padding: 1rem;
     border-radius: 1rem;
     margin-top: 1.3rem;
-    position: absolute;
-    bottom: -150%; /* Flytta rutan längre nedåt än planeten */
-    left: 50%;
-    transform: translateX(-50%);
-    transition: bottom 0.3s ease;
-}
 
-.planet:hover + .favoriteplanet-wrapper {
-    bottom: calc(-100% - 2rem); /* Flytta rutan nedåt när vi hovrar över planeten */
 }
 
 .favoriteplanet-wrapper h1 {
