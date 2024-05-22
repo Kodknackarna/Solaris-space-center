@@ -27,6 +27,7 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
 
     return (
         <section className="favorite-background" style={{ backgroundImage: `url(${BackgroundImage})` }}>
+             <h1 className="yesfavo">Mina favoritplaneter</h1>
             <div className="favoritePlanetList">
             {sortedFavoritePlanetList.length > 0 ? (
                 sortedFavoritePlanetList.map(planet => (

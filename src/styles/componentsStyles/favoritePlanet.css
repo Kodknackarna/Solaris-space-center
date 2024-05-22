@@ -9,6 +9,7 @@
     transform: translateX(-50%);
     width: 20rem;
     margin-bottom: 2rem;
+    
 }
 
 .favoriteplanet-wrapper h1 {
@@ -20,4 +21,8 @@
 
 .favoriteplanet-wrapper p {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.favoriteplanet-wrapper {
+    background-color: #222233;
 }
