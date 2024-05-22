@@ -37,10 +37,8 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
                             onMouseEnter={() => handleMouseEnter(planet)}
                             onMouseLeave={handleMouseLeave}
                              />
-                              {hoveredPlanet && hoveredPlanet.id === planet.id && (
-                                <div className="favoriteplanet-wrapper">
+                              {hoveredPlanet && hoveredPlanet.id === planet.id && ( 
                                     <FavoritePlanet planet={planet} />
-                                </div>
                             )}    
                     </div>
                 ))
