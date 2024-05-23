@@ -8,8 +8,8 @@
     left: 50%;
     transform: translateX(-50%);
     width: 20rem;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 4rem;
+    background-color: rgba(34, 34, 51, 0.7);
 }
 
 .favoriteplanet-wrapper h1 {
@@ -21,8 +21,4 @@
 
 .favoriteplanet-wrapper p {
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-.favoriteplanet-wrapper {
-    background-color: #222233;
 }
