@@ -14,7 +14,7 @@
     height: 100vh;
 }
 
-.favoritePlanetList {
+.favorite-planet-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -23,13 +23,13 @@
 }
 
 
-.nofavo {
+.no-favo {
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     font-size: 3rem;
 }
 
-.yesfavo {
+.yes-favo {
     text-align: center;
     color: whitesmoke;
     font-family: 'Orbitron', sans-serif;

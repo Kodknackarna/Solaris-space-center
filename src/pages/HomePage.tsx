@@ -17,12 +17,12 @@ function HomePage({ planets }: planetProps) {
     };
 
     return (
-        <section className="homePageWrapper">
+        <section className="home-page-wrapper">
             <h1>{headerText}</h1>
-            <div className="planetWrapper">
+            <div className="planet-wrapper">
                 <PlanetList planets={planets} updateHeaderText={updateHeaderText} />
             </div>
-            <div className="Home-navigation">
+            <div className="home-navigation">
                 <PlanetNav />
             </div>
         </section>

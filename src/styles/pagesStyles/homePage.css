@@ -1,4 +1,4 @@
-.planetWrapper{
+.planet-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -6,7 +6,7 @@
     height: 75vh;
 }
 
-.homePageWrapper {
+.home-page-wrapper {
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -14,7 +14,7 @@
     
 }
 
-.homePageWrapper h1 {
+.home-page-wrapper h1 {
     color: white;
     font-size: 4rem;
     position: relative;
@@ -23,7 +23,7 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.Home-navigation {
+.home-navigation {
     position: absolute;
     top: 0;
     left: 0;

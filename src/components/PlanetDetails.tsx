@@ -16,11 +16,11 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
     }
 
     return (
-        <section className="planetDetailsBackground">
-            <fieldset className="planetDetailsWrapper">
+        <section className="planet-details-background">
+            <fieldset className="planet-details-wrapper">
                 <legend>{planet.name}</legend>
-                <div className="upperWrapper">
-                    <div className="planetDetails">
+                <div className="upper-wrapper">
+                    <div className="planet-details">
                         <h2>Detaljer</h2>
                         <p><strong>Typ: </strong>{planet.type}</p>
                         <p><strong>Omkrets: </strong>{planet.circumference}</p>
@@ -31,7 +31,7 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
                         <p><strong>Nattemperatur: </strong>{planet.temp.night}</p>
                     </div>
                     
-                    <div className="planetMoon">
+                    <div className="planet-moon">
                         <h2>Månar</h2>
                         <p>{planet.moons && planet.moons.length > 0 ? planet.moons.join(', ') : 'Inga månar'}</p>
                     </div>
@@ -42,7 +42,7 @@ function PlanetDetails({ planet, togglePlanetInFavoriteList, favoritePlanetList 
                     </button>
                 </div>
 
-                <div className="planetInfo">
+                <div className="planet-info">
                     <p>{planet.desc}</p>
                 </div>
             </fieldset>

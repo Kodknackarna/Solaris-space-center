@@ -4,7 +4,7 @@ import '../styles/componentsStyles/planetNav.css'
 function PlanetNav () {
     return (
         <nav>
-            <ul className="navigationList">
+            <ul className="navigation-list">
                 <li>
                     <Link to="/">Hem</Link>
                 </li>

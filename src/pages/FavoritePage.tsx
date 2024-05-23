@@ -8,7 +8,7 @@ import { useState } from "react";
 
 type PlanetProps = {
     favoritePlanetList : PlanetType[]
-    updateHeaderText: () => void;
+    updateHeaderText?: () => void;
     onMouseEnter: () => void;
     onMouseLeave: () => void;
 }
@@ -27,8 +27,8 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
 
     return (
         <section className="favorite-background" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-             <h1 className="yesfavo">Mina favoritplaneter</h1>
-            <div className="favoritePlanetList">
+             <h1 className="yes-favo">Mina favoritplaneter</h1>
+            <div className="favorite-planet-list">
             {sortedFavoritePlanetList.length > 0 ? (
                 sortedFavoritePlanetList.map(planet => (
                     <div key={planet.id} >
@@ -44,7 +44,7 @@ function FavoritePage({ favoritePlanetList }: PlanetProps) {
                     </div>
                 ))
             ) : (
-                <p className="nofavo">Inga favoritplaneter</p>
+                <p className="no-favo">Inga favoritplaneter</p>
             )}
             
             </div>

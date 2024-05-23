@@ -56,7 +56,7 @@ function PlanetPage({ planets, togglePlanetInFavoriteList, favoritePlanetList }:
 
 
     return (
-        <section className="planetPageWrapper" style={{ background: gradientBackground }}>
+        <section className="planet-page-wrapper" style={{ background: gradientBackground }}>
             {planet ? <PlanetDetails planet={planet} 
             togglePlanetInFavoriteList={togglePlanetInFavoriteList} 
             favoritePlanetList={favoritePlanetList}/> 

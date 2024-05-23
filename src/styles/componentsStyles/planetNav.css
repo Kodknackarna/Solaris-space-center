@@ -1,10 +1,10 @@
-.navigationList {
+.navigation-list {
     list-style: none;
     
 
 }
 
-.navigationList a {
+.navigation-list a {
     color: whitesmoke;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
@@ -12,7 +12,7 @@
     font-size: 1.5rem;
 }
 
-.navigationList a:hover {
+.navigation-list a:hover {
     
     font-size: 1.7rem;
 
