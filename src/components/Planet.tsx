@@ -5,8 +5,8 @@ import "../styles/componentsStyles/planet.css";
 type planetProps = {
     planet : PlanetType,
     updateHeaderText: (text: string) => void
-    onMouseEnter: () => void;
-    onMouseLeave: () => void;
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
 }
 
 function Planet ({ planet, updateHeaderText, onMouseEnter, onMouseLeave } : planetProps ) {
@@ -15,13 +15,15 @@ function Planet ({ planet, updateHeaderText, onMouseEnter, onMouseLeave } : plan
     const handleMouseEnter = () => {
         setHeaderText(`${planet.name}`);
         updateHeaderText(`${planet.name}`);
-        onMouseEnter();
+        if(onMouseEnter)
+            onMouseEnter();
     };
 
     const handleMouseLeave = () => {
         setHeaderText("Solaris Space Center");
         updateHeaderText("Solaris Space Center");
-        onMouseLeave();
+        if(onMouseLeave)
+            onMouseLeave();
     };
 
     return (

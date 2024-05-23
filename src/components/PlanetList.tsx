@@ -8,13 +8,7 @@ type planetProps = {
 }
 
 function PlanetList({ planets, updateHeaderText }: planetProps) {
-    const handleMouseEnter = (planetName: string) => {
-        console.log(`Mouse entered: ${planetName}`);
-    };
-
-    const handleMouseLeave = (planetName: string) => {
-        console.log(`Mouse left: ${planetName}`);
-    };
+  
 
     return (
     <>
@@ -24,8 +18,6 @@ function PlanetList({ planets, updateHeaderText }: planetProps) {
                     planet={planet} 
                     key={planet.id} 
                     updateHeaderText={updateHeaderText}
-                    onMouseEnter={() => handleMouseEnter(planet.name)}
-                    onMouseLeave={() => handleMouseLeave(planet.name)}
                 />
             </Link>
         ))}
